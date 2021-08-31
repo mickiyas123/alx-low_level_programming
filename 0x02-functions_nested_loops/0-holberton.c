@@ -1,4 +1,4 @@
-#include "main.h"
+#include "header.h"
 
 /**
  * main -  prints Holberton, followed by a new line
