@@ -1,26 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - prints the numbers from 00 to 99
+ * main - Entry Point
+ * Description: prints all possible different combinations of two digits
+ *
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	int n, m;
+        int ch,n;
 
-	for (n = 48; n <= 57; n++)
-	{
-		for (m = 48; m <= 57; m++)
-		{
-			putchar(n);
-			putchar(m);
-			if (n != 57 || m != 57)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
+        for (ch = 48; ch <= 57; ch++)
+        {
+                for (n = ch+1; n <=57; n++)
+                {
+                        putchar(ch);
+                        putchar(n);
+
+                        if (ch != 56 || (ch == 56 && n != 57))
+                        {
+                                putchar(',');
+                                putchar(' ');
+                        }
+                }
+        }
+        putchar('\n');
+        return (0);
 }
