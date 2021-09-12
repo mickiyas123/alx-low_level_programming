@@ -3,6 +3,7 @@
 /**
  * _abs - Entry Point
  * Description: function that computes the absolute value of an integer
+ * @n: input parameter
  *
  * Return: absolute value of a number
  */
