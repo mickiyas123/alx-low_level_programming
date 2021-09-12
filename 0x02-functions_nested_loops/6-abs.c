@@ -6,15 +6,19 @@
  *
  * Return: absolute value of a number
  */
-int _abs(int)
+int _abs(int n)
 {
-	int r, f;
+	int r;
 
-	if (r < 0)
+	if (n > 0)
 	{
-		f = r * -1;
-		return (f);
+		return (n);
+	}
+	else if (n < 0)
+	{
+		r = n * -1;
+		return (r);
 	}
 
-	return (r);
+	return (n);
 }
