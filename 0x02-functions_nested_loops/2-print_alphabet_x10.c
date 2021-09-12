@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * print_alphabet_x10 - Entry Point
@@ -18,7 +18,6 @@ void print_alphabet_x10(void)
 			ch++;
 		}
 	_putchar('\n');
-	i++;	
-	}	
-
-}	
+	i++;
+	}
+}
