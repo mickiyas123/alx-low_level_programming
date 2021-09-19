@@ -6,13 +6,12 @@
  *@n: first int parameter
  *@k: second int parameter
  *
- * Return: 0 Always Success
+ * Return: sum
  */
 int add(int n, int k)
 {
 	int sum = n + k;
 
-	_putchar(sum);
+	return (sum);
 
-	return (0);
 }
