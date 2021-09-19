@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void jack_bauer - Entry Point
+ * jack_bauer - Entry Point
  * Description: prints every minute of the day from 00:00 to 23:59
  *
  * Return: void
