@@ -18,12 +18,19 @@ void jack_bauer(void)
 			{
 				for (z = 48; z <= 57; z++)
 				{
-					_putchar(i);
-					_putchar(j);
-					_putchar(':');
-					_putchar(k);
-					_putchar(z);
-					_putchar('\n');
+					if (i = 49 && i < 52)
+					{
+						continue;
+					}
+					else
+					{
+						_putchar(i);
+						_putchar(j);
+						_putchar(':');
+						_putchar(k);
+						_putchar(z);
+						_putchar('\n');
+					}
 				}
 			}
 		}
