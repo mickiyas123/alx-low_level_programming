@@ -20,7 +20,8 @@ void times_table(void)
 			{
 				_putchar(n);
 				_putchar(',');
-				_putchar('  ');
+				_putchar(' ');
+				_putchar(' ');
 			}
 		        else if (i >= 50 && i <= 4)
 			{
@@ -28,7 +29,8 @@ void times_table(void)
 				{
 					_putchar(n);
 					_putchar(',');
-					_putchar('  ');
+					_putchar(' ');
+					_putchar(' ');
 				}
 			        else
 				{
@@ -43,7 +45,8 @@ void times_table(void)
 				{
 					_putchar(n);
 					_putchar(',');
-					_putchar('  ');
+					_putchar(' ');
+					_putchar(' ');
 				}
 				else
 				{
