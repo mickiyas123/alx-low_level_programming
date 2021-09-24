@@ -29,7 +29,7 @@ void times_table(void)
 			}
 			else if (i >= 50 && i <= 52)
 			{
-				if (n < 8)
+				if (n < 56)
 				{
 					_putchar(n);
 					_putchar(',');
@@ -45,7 +45,7 @@ void times_table(void)
 			}
 			else if (i >= 53 && i <= 57)
 			{
-				if (n < 5)
+				if (n < 53)
 				{
 					_putchar(n);
 					_putchar(',');
