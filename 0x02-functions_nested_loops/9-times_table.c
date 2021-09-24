@@ -27,7 +27,7 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(' ');
 			}
-		        else if (i >= 50 && i <= 4)
+			else if (i >= 50 && i <= 52)
 			{
 				if (n < 8)
 				{
