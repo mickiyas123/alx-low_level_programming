@@ -12,7 +12,7 @@ void times_table(void)
 
 	for (i = 48; i <= 57; i++)
 	{
-		for (j = 48 j <= 57; j++)
+		for (j = 48; j <= 57; j++)
 		{
 			n = i * j;
 
