@@ -19,44 +19,44 @@ void times_table(void)
 			if (i < 50)
 			{
 				_putchar(n);
-				_putchar(",");
-				_putchar("  ");
-			}	
+				_putchar(',');
+				_putchar('  ');
+			}
 		        else if (i >= 50 && i <= 4)
 			{
 				if (n < 8)
 				{
 					_putchar(n);
-					_putchar(",");
-					_putchar("  ");
+					_putchar(',');
+					_putchar('  ');
 				}
 			        else
 				{
 					_putchar(n);
-					_putchar(",");
-					_putchar(" ");
+					_putchar(',');
+					_putchar(' ');
 				}
-			}	
+			}
 			else if (i >= 53 && i <= 57)
 			{
 				if (n < 5)
 				{
 					_putchar(n);
-					_putchar(",");
-					_putchar("  ");
+					_putchar(',');
+					_putchar('  ');
 				}
 				else
 				{
 					_putchar(n);
-					_putchar(",");
-					_putchar(" ");
-				}	
-			}	
-			       	
+					_putchar(',');
+					_putchar(' ');
+				}
+			}
+
 		}
 
-		_putchar("\n");
+		_putchar('\n');
 	}
 
 	return (0);
-}	
+}
