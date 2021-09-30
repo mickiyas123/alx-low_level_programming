@@ -9,9 +9,9 @@
  */
 int _isupper(int c)
 {
-	int i, j;
+	int i;
 
-	for (j = 97; j <= 122; j++)
+	for (j = 65; j <= 90; j++)
 	{
 		if (c == j)
 		{
