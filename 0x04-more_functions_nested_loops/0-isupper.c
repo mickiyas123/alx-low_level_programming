@@ -11,7 +11,7 @@ int _isupper(int c)
 {
 	int i;
 
-	for (j = 65; j <= 90; j++)
+	for (i = 65; j <= 90; j++)
 	{
 		if (c == j)
 		{
