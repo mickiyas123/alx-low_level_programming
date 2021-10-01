@@ -31,5 +31,4 @@ void print_diagonal(int n)
 			_putchar(' ');
 		}
 	}
-	return (0);
 }
