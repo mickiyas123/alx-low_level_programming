@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void more_numbers - function that prints 0 - 14 10 times
+ * more_numbers - function that prints 0 - 14 10 times
  *
  * Return : Always Sucess (0)
  */
