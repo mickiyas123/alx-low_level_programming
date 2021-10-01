@@ -2,13 +2,11 @@
 #include <stdio.h>
 
 /**
- * Main - Entry Point
- * Description:print "Fizz" for multiple of 3 "Buzz" for 5 "FizzBuzz" for both
+ * main - prints the numbers from 1 to 100, followed by a new line
+ * but for multiples of three prints Fizz instead of the number
+ * and for the multiples of five prints Buzz
  *
- * prints the numbers from 1 to 100, followed by a new line. But for multiples
-   of three print Fizz instead of the number and for the multiples of five print
-   Buzz. For numbers which are multiples of both three and five print FizzBuzz
- * Return : Always success (0);
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -34,7 +32,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ",n);
+			printf("%d ", n);
 		}
 	}
 	printf("\n");
