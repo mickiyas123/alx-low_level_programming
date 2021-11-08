@@ -28,6 +28,8 @@ char *_strchr(char *s, char c)
 			position = &s[i];
 			break;
 		}
+	}
 
 	return (position);
+
 }
