@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * int _strspn - gets the length of a prefix substring
+ * _strspn - gets the length of a prefix substring
  * @s: the address of the full string
- * @accept: adress of the substring 
+ * @accept: adress of the substring
  *
  * Return: length of the inital prefix
  */
