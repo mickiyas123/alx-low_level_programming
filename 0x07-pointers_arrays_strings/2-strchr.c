@@ -16,6 +16,7 @@ char *_strchr(char *s, char c)
 	if (c == '\0')
 	{
 		position = 0;
+		break;
 	}
 	else
 	{
