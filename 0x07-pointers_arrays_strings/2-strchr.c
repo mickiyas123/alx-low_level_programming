@@ -22,7 +22,7 @@ char *_strchr(char *s, char c)
 		}
 		else
 		{
-			postion = '\0';
+			position = '\0';
 		}
 
 	}
