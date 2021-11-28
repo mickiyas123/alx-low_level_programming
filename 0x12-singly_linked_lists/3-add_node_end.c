@@ -3,10 +3,12 @@
 #include "lists.h"
 
 /**
- * add_node_end - function that adds a new node at the 
+ * add_node_end - function that adds a new node at the
  * end of a linkedlist
  * @head: Adress of the first node
- * @str string each node contains
+ * @str: string each node contains
+ *
+ * Return: Adress of first element
  */
 
 list_t *add_node_end(list_t **head, const char *str)
