@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
 
-
-/*
+/**
  * free_list - function that frees linked list
  * @head: Address of the first node
  *
@@ -12,7 +11,7 @@ void free_list(list_t *head)
 {
 	list_t *temp;
 
-	while(head)
+	while (head)
 	{
 		temp = head->next;
 		free(head->str);
