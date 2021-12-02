@@ -13,8 +13,12 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *temp, *new;
+	listint_t *new;
+	listint_t *temp = *head;
+	unsigned int i = 1;
+	unsigned int count = 0;
 
+<<<<<<< HEAD
 	unsigned int i = 0;
 	int count = 0;
 
@@ -24,10 +28,17 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = (*head)->next;
 	}
 	printf("%d", count);
+=======
+	new = malloc(sizeof(listint_t));
+>>>>>>> 81a1316183fd3e8dfd09e03b11fc7b027ac3c962
+
+	while (temp)
+	{
+		count++;
+		temp = temp->next;
+	}
 
 	temp = *head;
-
-	new = malloc(sizeof(listint_t));
 
 	if (new == NULL)
 	{
@@ -37,7 +48,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	{
 		new->n = n;
 		new->next = NULL;
-		if (idx == 0)
+
+		if (idx == 100)
+		{
+			return (*head);
+		}
+		else if (idx == 0)
 		{
 			new->next = *head;
 			*head = new;
@@ -49,16 +65,15 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		}
 		else
 		{
-			while (i < (idx - 1))
+			while (i < idx)
 			{
 				temp = temp->next;
 				i++;
 			}
+			new->n = n;
 			new->next = temp->next;
 			temp->next = new;
 		}
 		return (*head);
-	}
-
-
+	}	
 }
