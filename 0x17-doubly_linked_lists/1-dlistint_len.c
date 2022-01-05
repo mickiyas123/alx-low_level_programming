@@ -3,7 +3,7 @@
 
 /**
  * dlistint_len - function that returns total number of nodes
- * double linked list
+ * in a double linked list
  * @h: adress of first node
  *
  * Return: length of the double linked list
