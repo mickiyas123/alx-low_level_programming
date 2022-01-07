@@ -10,6 +10,9 @@
  * Description: doubly linked list node structure
  *
  */
+#include <stdlib.h>
+#include <stdio.h>
+
 typedef struct dlistint_s
 {
 	int n;
