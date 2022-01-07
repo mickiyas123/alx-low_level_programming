@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -18,32 +17,25 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	if (new == NULL)
 		return (NULL);
+	if (*h == NULL || idx == 0)
+		return (add_dnodeint(h, n));
 
 	new->n = n;
 	new->prev = NULL;
 	new->next = NULL;
-
-	if (*h == NULL && idx == 0)
-	{
-		*h = new;
-		return (*h);
-	}
-	
-	if (idx == 0)
-	{
-		(*h)->prev = new;
-		new->next = *h;
-		*h = new;
-		return (new);
-	}
 
 	for (i = 0; i < (idx - 1); i++)
 	{
 		if (temp != NULL)
 			temp = temp->next;
 	}
-
-	if (temp != NULL)
+	if (temp->next == NULL)
+	{
+		temp->next = new;
+		new->prev = temp;
+		return (new);
+	}
+	else if (temp != NULL)
 	{
 		new->prev = temp;
 		new->next = temp->next;
@@ -51,6 +43,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		new->next->prev = new;
 		return (new);
 	}
-	else
-		return (NULL);
+	return (NULL);
 }
