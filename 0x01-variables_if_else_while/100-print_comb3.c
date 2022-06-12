@@ -8,22 +8,23 @@
  */
 int main(void)
 {
-	int ch, n;
-
-	for (ch = 48; ch <= 57; ch++)
+	for (int i = 48; i < 58; i++)
 	{
-		for (n = ch + 1; n <= 57; n++)
+		for (int j = i + 1; j < 58; j++)
 		{
-			putchar(ch);
-			putchar(n);
+			putchar(i);
+			putchar(j);
 
-			if (ch != 56 || (ch == 56 && n != 57))
+			if (i == 56 && j == 57)
+			{
+				putchar('\n');
+			}
+			else
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }
