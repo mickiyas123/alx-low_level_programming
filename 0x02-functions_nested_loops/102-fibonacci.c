@@ -10,20 +10,20 @@
  */
 int main(void)
 {
-	int t0 = 0;
-	int t1 = 1;
-	int s, i;
+	long int t0 = 0;
+	long int t1 = 1;
+	long int s, i;
 
 	for (i = 1; i <= 50; i++)
 	{
 		s = t0 + t1;
 		if (i != 50)
 		{
-			printf("%d, ", s);
+			printf("%ld, ", s);
 		}
 		else
 		{
-			printf("%d\n", s);
+			printf("%ld\n", s);
 		}
 		t0 = t1;
 		t1 = s;
