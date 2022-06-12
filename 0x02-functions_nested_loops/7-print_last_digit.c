@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * print_last_digit - Entry Point
- * Description:  function that prints the last digit of a number
+ * print_last_digit - function that prints the last digit of a number
  * @n : input parameter
  *
  * Return: last digit of a number
