@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * add - Main Entry
- * Description: add to numbers
+ * add - add to numbers
  *@n: first int parameter
  *@k: second int parameter
  *
