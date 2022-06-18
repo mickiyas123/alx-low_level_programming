@@ -31,6 +31,6 @@ int main(void)
 			num = num / count;
 		}
 	}
-	printf("%ld\n", count);
+	printf("%ld\n", count - 1);
 	return (0);
 }
