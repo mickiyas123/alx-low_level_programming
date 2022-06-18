@@ -1,11 +1,36 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_number - prints an integer
- * @n : integer to be printed
+ * main - Entry point
+ * Desription: program that finds and prints the largest
+ *             prime factor of the number 612852475143
  *
- * Return Always success (0)
+ * Return: Always success (0)
  */
-void print_number(int n)
+int main(void)
 {
+	int long num = 612852475143;
+	int long count;
+	int largest;
+	int i = 0;
+
+	for (count = 2; num > 1; count++)
+	{
+		while (num % count == 0)
+		{
+			if (i == 0)
+			{
+				largest = count;
+				i++;
+			}
+			else
+			{
+				if (count > largest)
+					largest = count;
+			}
+			num = num / count;
+		}
+	}
+	printf("%ld\n", count);
+	return (0);
 }
