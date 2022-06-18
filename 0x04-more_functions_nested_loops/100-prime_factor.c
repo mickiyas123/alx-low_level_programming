@@ -9,28 +9,25 @@
  */
 int main(void)
 {
-	int long num = 612852475143;
-	int long count;
-	int largest;
-	int i = 0;
+	long int num = 612852475143, fact = 2, maxFact;
 
-	for (count = 2; num > 1; count++)
+	while (num > 1)
 	{
-		while (num % count == 0)
+		if (num % fact != 0)
 		{
-			if (i == 0)
+			fact++;
+		}
+		else
+		{
+			maxFact = num;
+			num = num / fact;
+
+			if (num == 1)
 			{
-				largest = count;
-				i++;
+				printf("%ld\n", maxFact);
+				break;
 			}
-			else
-			{
-				if (count > largest)
-					largest = count;
-			}
-			num = num / count;
 		}
 	}
-	printf("%ld\n", count - 1);
 	return (0);
 }
