@@ -2,45 +2,41 @@
 
 /**
  * rot13 - Encodes a string using rot13.
- * @str: The string to be encoded.
  *
  * Return: A pointer to the encoded string.
  */
+
+/**
+ * @s: charcter to be rotated
+ */
+
+void calc(char *s);
+
+
 char *rot13(char *str)
 {
-	int indx1 = 0, indx2;
-	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F',
-			     'G', 'H', 'I', 'J', 'K', 'L',
-			     'M', 'N', 'O', 'P', 'Q', 'R',
-			     'S', 'T', 'U', 'V', 'W', 'X',
-			     'Y', 'Z', 'a', 'b', 'c', 'd',
-			     'e', 'f', 'g', 'h', 'i', 'j',
-			     'k', 'l', 'm', 'n', 'o', 'p',
-			     'q', 'r', 's', 't', 'u', 'v',
-			     'w', 'x', 'y', 'z'};
-	char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S',
-			     'T', 'U', 'V', 'W', 'X', 'Y',
-			     'Z', 'A', 'B', 'C', 'D', 'E',
-			     'F', 'G', 'H', 'I', 'J', 'K',
-			     'L', 'M', 'n', 'o', 'p', 'q',
-			     'r', 's', 't', 'u', 'v', 'w',
-			     'x', 'y', 'z', 'a', 'b', 'c',
-			     'd', 'e', 'f', 'g', 'h', 'i',
-			     'j', 'k', 'l', 'm'};
+	int i;
 
-	while (str[indx1])
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (indx2 = 0; indx2 < 52; indx2++)
-		{
-			if (str[indx1] == alphabet[indx2])
-			{
-				str[indx1] = rot13key[indx2];
-				break;
-			}
-		}
-
-		indx1++;
-
+		calc(&(str[i]));
 	}
 	return (str);
+}
+
+/**
+ * calc - calculate rotation of the string.
+ * @s: charcter to be rotated
+ */
+
+void calc(char *s)
+{
+	if ((*s >= 'A' && *s <= 'M') || (*s >= 'a' && *s <= 'm'))
+	{
+		*s = *s + 13;
+	}
+	else if ((*s >= 'N' && *s <= 'Z') || (*s >= 'n' && *s <= 'z'))
+	{
+		*s = *s - 13;
+	}
 }
